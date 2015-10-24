@@ -1,0 +1,177 @@
+// bower:scss
+// endbower
+
+@import 'partials/_reset';
+@import 'partials/_variables';
+@import 'partials/_mixins';
+
+/********************************
+/ General styling
+/*******************************/
+
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+  font-family: 'Montserrat light', arial;
+  color: $black;
+  background-color: $white;
+  font-size: 100%;
+  line-height: $line-height;
+}
+
+.site-container {
+	width: 100%;
+	height: 100%;
+	.inner-container {
+		text-align: center;
+		height: 100%;
+	}
+}
+
+/********************************
+/ Sections
+/*******************************/
+
+.landing-section {
+	height: 100%;
+	color: $white;
+	position: relative;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    &:before {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to right, #75D1FF 0%, #7626FF 100%);
+		opacity: .6; 
+  	}
+	.centered {
+		height: 100%;
+	}
+}
+
+header {
+	nav {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		z-index: 999;
+		.hamburger {
+			width: 27px;
+			height: 22px;
+			float: right;
+			position: relative;
+			transform: rotate(0deg);
+			transition: 0.5s ease-in-out;
+			cursor: pointer;
+			span {
+				display: block;
+				position: absolute;
+				height: 5px;
+				width: 100%;
+				background-color: $white;
+				opacity: 1;
+				left: 0;
+				transition: .25s ease-in-out;
+				z-index: 9999;
+				&:nth-child(1) {
+					top: 0;
+				}
+				&:nth-child(2), &:nth-child(3) {
+					top: 9px;
+				}
+				&:nth-child(4) {
+					top: 18px;
+				}
+			}
+		}
+		.hamburger.open {
+			transition: 0.5s ease-in-out;
+			&.open {
+				span {
+					&:nth-child(1) {
+						top:9px;
+    					width:0;
+    					left:50%;
+					}
+					&:nth-child(2) {
+    					transform:rotate(45deg);
+					}
+					&:nth-child(3) {
+    					transform:rotate(-45deg);
+					}
+					&:nth-child(4) {
+    					top:9px;
+    					width:0;
+    					left:50%;
+					}
+				}
+			}
+		}
+	}
+	.nav-overlay {
+		display: none;
+		background-color: $opacity-black;
+		transition: display 1s ease-in-out;
+		font-family: 'Montserrat Bold', arial;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		&.active {
+			display: block;
+			transition: display 1s ease-in-out;
+		}
+		ul {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			a {
+				text-decoration: none;
+				color: $white;
+				z-index: 9999;
+				font-size: $font-size-l;
+				li {
+					padding: 30px 0;
+					font-size: $font-size-l;
+				}
+			}
+			
+		}
+	}
+}
+.intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	&.hidden {
+		display: none;
+		transition: display 0.5s ease-in-out;
+	}
+	h1 {
+		font-family: 'Montserrat Hairline', arial;
+		font-size: 2.7em;
+	}
+	p {
+		font-family: 'Montserrat Bold', arial;
+		font-size: $font-size-xl;
+	}
+}
+
+
+
+
