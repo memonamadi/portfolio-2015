@@ -12,11 +12,9 @@
 		$(hamburger_icon).on('click', function(e){
 			e.preventDefault;
 			$(this).toggleClass('open');
-			$(nav_container).toggleClass('active');
-			$(intro).toggleClass('hidden');
+			$(nav_container).slideToggle('slow').toggleClass('active');
 		});	
 	}
-
 
 
 	init();

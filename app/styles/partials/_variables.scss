@@ -22,6 +22,13 @@ $line-height: 1.6;
 $black: #333;
 $white: #ffffff;
 $blue: #1695A3;
+$grey: #f2f1f1;
 $opacity-black: rgba(0,0,0,0.5);
 $opacity-white: rgba(255,255,255,0.5);
 
+// Breakpoints
+$bp-s: 768px;
+$bp-m : 1024px;
+$bp-l: 1200px;
+$bp-xl: 1400px;
+$bp-xxl: 1600px;

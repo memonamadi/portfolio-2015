@@ -13,7 +13,6 @@
     <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
     <link href="http://allfont.net/allfont.css?fonts=montserrat-bold" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.css">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -22,22 +21,23 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
+
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="site-container">
-      <div class="inner-container fullpage">
-        <section class="landing-section section">
+      <div class="inner-container">
+        <section class="landing-section">
           <div class="centered">
             <header>
               <nav class="nav-overlay">
                 <div>
                   <ul>
-                    <a href="#" class="navbar-link"><li>WHAT I DO</li></a>
-                    <a href="#" class="navbar-link"><li>PROJECTS</li></a>
-                    <a href="#" class="navbar-link"><li>CONTACT</li></a>
+                    <a href="#" class="navbar-link"><li class="animated">WORK</li></a>
+                    <a href="#" class="navbar-link"><li class="animated-mid">WHAT I DO</li></a>
+                    <a href="#" class="navbar-link"><li class="animated-slow">CONTACT</li></a>
                   </ul>
                 </div>
               </nav>
@@ -50,7 +50,7 @@
                 </a>
               </nav>
             </header>
-            <div class="intro">
+            <div class="intro animated-mid">
               <h1>MEMONA MADI</h1>
               <p>CREATIVE UI DEVELOPER</p>
             </div>
@@ -58,43 +58,78 @@
         </section>
         <section class="projects-section section">
           <div class="centered">
-            <div class="project-one slide">
-              <div class="inner-project">
-                <h2>TECH EVENTS NEAR ME</h2>
-              </div>
-            </div>
-            <div class="project-two slide">
-              <div class="inner-project">
-                <h2>TECH EVENTS NEAR ME</h2>
-              </div>
-            </div>
-            <div class="project-three slide">
-              <div class="inner-project">
-                <h2>TECH EVENTS NEAR ME</h2>
-              </div>
-            </div>
-            <div class="project-four slide">
-              <div class="inner-project">
-                <h2>TECH EVENTS NEAR ME</h2>
-              </div>
-            </div>
+            <h2>WORK</h2>
+            <ul class="portfolio-items">
+              <a href="tesco-celebrate-the-nations.html">
+                <li class="portfolio-item tesco animated">
+                  <div class="portfolio-hover">
+                    <div class="ptable">
+                      <div class="pcell">
+                        <h3>CELEBRATE THE NATIONS</h3>
+                        <span>DEVELOPED AT CEDAR DCX</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="danone-nutrimum.html">
+                <li class="portfolio-item nutrimum animated">
+                  <div class="portfolio-hover">
+                    <div class="ptable">
+                      <div class="pcell">
+                        <h3>DANONE NUTRIMUM</h3>
+                        <span>DEVELOPED AT CEDAR DCX</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="tech-events-finder.html">
+                <li class="portfolio-item tech animated">
+                  <div class="portfolio-hover">
+                    <div class="ptable">
+                      <div class="pcell">
+                        <h3>TECH EVENTS FINDER</h3>
+                        <span>PERSONAL PROJECT</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="photo-blog.html">
+                <li class="portfolio-item blog animated">
+                  <div class="portfolio-hover">
+                    <div class="ptable">
+                      <div class="pcell">
+                        <h3>PHOTO BLOG</h3>
+                        <span>PERSONAL PROJECT</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
           </div>
+          <div class="clear"></div>
         </section>
-        <section class="about-section section">
+        <section class="about-section">
           <div class="centered">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquid autem eos obcaecati odit esse eius! Harum adipisci quibusdam sapiente minima animi amet neque, molestias, eaque dolorem soluta optio! Repellat.</p>
+            <h2>WHAT I DO</h2>
+            <p>I'm Memona Madi, a self-taught creative user interface developer currently based in London, UK.</p>
+            <p>As part of the Cedar DCX team I do front-end development work for Tesco, Danone and British Airways, amongst others.</p>
+            <p>I have a strong experience working with HTML(5), CSS(3), Sass, Javascript and jQuery and like to use a modern workflow in my work, using tools like Grunt.js, Bower and Git.</p>
+            <p>I try to learn something new everyday and build up my skills by creating side projects and going to tech events in London.</p>
           </div>
         </section>
         <section class="footer-section section">
           <footer>
             <div class="centered">
-              <p>&#169;2015 Memona Madi</p>
               <div class="social">
                 <ul>
-                  <li>Twitter</li>
-                  <li>LinkedIn</li>
-                  <li>Github</li>
-                  <li>Email</li>
+                  <li class="animated-mid"><a href="">GITHUB</a></li>
+                  <li class="animated-mid"><a href="">EMAIL</a></li>
+                  <li class="animated-mid"><a href="">LINKEDIN</a></li>
+                  <li class="animated-mid"><a href="">TWITTER</a></li>
                 </ul>
               </div>
             </div>
