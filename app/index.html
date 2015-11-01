@@ -3,15 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Memona Madi | Creative front-end developer</title>
-    <meta name="description" content="">
+    <meta name="description" content="Portfolio of Memona Madi, creative developer based in London, UK.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href="http://allfont.net/allfont.css?fonts=montserrat-hairline" rel="stylesheet" type="text/css" />
-    <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
-    <link href="http://allfont.net/allfont.css?fonts=montserrat-bold" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -26,118 +22,86 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="site-container">
-      <div class="inner-container">
+    <div class="main-wrapper">
+      <nav class="menu-icon">
+        <h1><img src="images/logo.png" alt="Memona Madi"></h1>
+        <a class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </nav>
+      <div class="site-container">
         <section class="landing-section">
           <div class="centered animated-mid">
             <header>
               <nav class="nav-overlay">
                 <div>
                   <ul>
-                    <a href="#" class="navbar-link"><li class="animated">WORK</li></a>
-                    <a href="#" class="navbar-link"><li class="animated-mid">WHAT I DO</li></a>
-                    <a href="#" class="navbar-link"><li class="animated-slow">CONTACT</li></a>
+                    <a href="#about-section" class="navbar-link"><li class="animated">about</li></a>
+                    <a href="#project-section" class="navbar-link"><li class="animated-mid">work</li></a>
+                    <a href="#footer-section" class="navbar-link"><li class="animated-slow">contact</li></a>
                   </ul>
                 </div>
               </nav>
-              <nav>
-                <a class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </a>
-              </nav>
             </header>
-            <div class="intro">
-              <h1>MEMONA MADI</h1>
-              <p>CREATIVE UI DEVELOPER</p>
-            </div>
-            <div class="arrow-down">
-              <img src="images/arrow.png" alt="">
+          </div>
+        </section>
+        <div class="clear"></div>
+        <section class="about left" id="about-section">
+          <div class="centered">
+            <h2>about</h2>
+            <p>Memona Madi is a <span>user interface developer</span> with a focus on interactive design. 
+            She was raised in France and is now living and working in London.</p>
+          </div>
+        </section>
+        <div class="clear"></div>
+        <section class="clients right">
+          <div class="centered">
+            <h2>clients</h2>
+            <p>She has had the privilege of making digital solutions for clients including <span>Tesco</span>, <span>British Airways</span> and <span>Danone Nutrimum</span>.</p>
+          </div>
+        </section>
+        <div class="clear"></div>
+        <section class="project left" id="project-section">
+          <div class="centered">
+            <h2>TECH EVENTS FINDER</h2>
+            <div class="tech">
+              <a href="http://techeventsnear.me/" target="_blank"><img src="images/tech.png" alt="tech events finder"></a>
             </div>
           </div>
         </section>
-        <section class="projects-section section">
+        <div class="clear"></div>
+        <section class="project right">
           <div class="centered">
-            <h2>WORK</h2>
-            <ul class="portfolio-items">
-              <a href="http://realfood.tesco.com/celebratethenations.html">
-                <li class="portfolio-item tesco animated">
-                  <div class="portfolio-hover">
-                    <div class="ptable">
-                      <div class="pcell">
-                        <h3>CELEBRATE THE NATIONS</h3>
-                        <span>DEVELOPED AT CEDAR DCX</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </a>
-              <a href="http://nutrimum.co.uk">
-                <li class="portfolio-item nutrimum animated">
-                  <div class="portfolio-hover">
-                    <div class="ptable">
-                      <div class="pcell">
-                        <h3>DANONE NUTRIMUM</h3>
-                        <span>DEVELOPED AT CEDAR DCX</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </a>
-              <a href="http://techeventsnearme.io">
-                <li class="portfolio-item tech animated">
-                  <div class="portfolio-hover">
-                    <div class="ptable">
-                      <div class="pcell">
-                        <h3>TECH EVENTS FINDER</h3>
-                        <span>PERSONAL PROJECT</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </a>
-              <a href="http://photo-diary.memonamadi.com">
-                <li class="portfolio-item blog animated">
-                  <div class="portfolio-hover">
-                    <div class="ptable">
-                      <div class="pcell">
-                        <h3>PHOTO BLOG</h3>
-                        <span>PERSONAL PROJECT</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </a>
+            <h2>ROCK PAPER SCISSORS</h2>
+            <div class="game">
+              <a href="http://www.game.memonamadi.com/" target="_blank"><img src="images/game.png" alt="rock paper scissors"></a>
+            </div>
+          </div>
+        </section>
+        <div class="clear"></div>
+        <section class="project left">
+          <div class="centered">
+            <h2>FUNNY HOW SECRETS TRAVEL</h2>
+            <div class="blog">
+              <a href="http://photo-diary.memonamadi.com/" target="_blank"><img src="images/blog.png" alt="photo blog"></a>
+            </div>
+          </div>
+        </section>
+        <div class="clear"></div>
+        <footer id="footer-section">
+          <div class="centered">
+            <h2>stay in touch</h2>
+            <a href="mailto:madi.memona@gmail.com">madi.memona@gmail.com</a>
+            <ul>
+              <li><a href="https://github.com/memonamadi" class="animated" target="_blank">github</a></li>
+              <li><a href="https://uk.linkedin.com/in/memonamadi" class="animated" target="_blank">linkedin</a></li>
+              <li><a href="https://twitter.com/memonamadi" class="animated" target="_blank">twitter</a></li>
             </ul>
           </div>
-          <div class="clear"></div>
-        </section>
-        <section class="about-section">
-          <div class="centered">
-            <h2>WHAT I DO</h2>
-            <p>I'm Memona Madi, a self-taught creative user interface developer currently based in London, UK.</p>
-            <p>As part of the Cedar DCX team I do front-end development work for Tesco, Danone and British Airways, amongst others.</p>
-            <p>I have a strong experience working with HTML(5), CSS(3), Sass, Javascript and jQuery and like to use a modern workflow in my work, using tools like Grunt.js, Bower and Git.</p>
-            <p>I try to learn something new everyday and build up my skills by creating side projects and going to tech events in London.</p>
-          </div>
-        </section>
-        <section class="footer-section section">
-          <footer>
-            <div class="centered">
-              <div class="social">
-                <ul>
-                  <li class="animated-mid"><a href="">GITHUB</a></li>
-                  <li class="animated-mid"><a href="">EMAIL</a></li>
-                  <li class="animated-mid"><a href="">LINKEDIN</a></li>
-                  <li class="animated-mid"><a href="">TWITTER</a></li>
-                </ul>
-              </div>
-            </div>
-          </footer>
-        </section>
+        </footer>
       </div>
     </div>
   
@@ -145,7 +109,6 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/particles.js/particles.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -162,7 +125,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-69538961-1');ga('send','pageview');
     </script>
   </body>
 </html>
