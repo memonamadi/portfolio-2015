@@ -5,24 +5,23 @@
 @import 'partials/_variables';
 @import 'partials/_mixins';
 
-html {
-	height: auto;
-	position: static;
+body {
+	width: 100%;
+	height: 100%;
+	font-family:'Playfair Display', serif;
+	line-height: $line-height;
 }
 
-body {
+.main-wrapper {
+	width: 100%;
+	height: 100%;
 	background: linear-gradient(to bottom,
 				rgba(86, 60, 252, 1) 0%,
 				rgba(141, 83, 234, 1) 50%,
 				rgba(191, 105, 218, 1) 100%);
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	font-family:'Playfair Display', serif;
-	line-height: $line-height;
-	transition: all 0.5s ease-in;
+	background-size: cover;
 }
 
 a {
@@ -39,9 +38,9 @@ h1 {
 	margin-left: 50px;
 	img {
 		width: 60px;
-		margin-top: -10px;
-		animation-name: slideInLeft;
-		-webkit-animation-name: slideInLeft;
+		margin-top: -18px;
+		animation-name: fadeInDown;
+		-webkit-animation-name: fadeInDown;
 	}
 }
 
@@ -135,8 +134,8 @@ nav.menu-icon {
 		transform: rotate(0deg);
 		transition: 0.5s ease-in-out;
 		cursor: pointer;
-		animation-name: slideInRight;
-		-webkit-animation-name: slideInRight;
+		animation-name: fadeInDown;
+		-webkit-animation-name: fadeInDown;
 		span {
 			display: block;
 			position: absolute;
@@ -184,7 +183,6 @@ nav.menu-icon {
 
 .nav-overlay {
 	display: none;
-	transition: display 1s ease;
 	background-color: $white;
 	opacity: 1;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -242,14 +240,10 @@ nav.menu-icon {
 .about {
 	background: transparent;
 	margin-top: 100px;
-	animation-name: slideInLeft;
-	-webkit-animation-name: slideInLeft;
 }
 
 .clients {
 	background: transparent;
-	animation-name: slideInRight;
-	-webkit-animation-name: slideInRight;
 }
 
 .project {
@@ -267,20 +261,9 @@ nav.menu-icon {
 	}
 }
 
-.slide-left {
-	animation-name: slideInLeft;
-	-webkit-animation-name: slideInLeft;
-}
-
-.slide-right {
-	animation-name: slideInRight;
-	-webkit-animation-name: slideInRight;
-}
-
-
 footer {
 	a {
-		font-size: $font-size-m;
+		font-size: $font-size-l;
 		color: $black;
 		&:hover {
 			color: $white;
@@ -298,7 +281,7 @@ footer {
 		margin: 10px 0 60px;
 		li {
 			display: inline-block;
-			padding: 0 10px 0 0;
+			padding: 0 20px 0 0;
 			a {
 				text-transform: uppercase;
 				font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -308,16 +291,18 @@ footer {
 					font-weight: 800;
 				}
 				&:hover {
-					color: $black;
 					transition: .25s ease-in-out;
 					animation-name: pulse;
 					-webkit-animation-name: pulse;
+				}
+				img {
+					width: 40px;
 				}
 			}
 		}
 	}
 }
-	
+
 .animated {
   	-webkit-animation-duration: 1s;
   	animation-duration: 1s;
@@ -339,23 +324,6 @@ footer {
   	animation-fill-mode: both;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 @keyframes slideInRight {
   from {
@@ -382,7 +350,7 @@ footer {
 @keyframes fadeInDown {
   from {
     opacity: 0.3;
-    transform: translate3d(0, -0%, 0);
+    transform: translate3d(0, -300%, 0);
   }
 
   to {
