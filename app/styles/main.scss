@@ -48,11 +48,10 @@ h1 {
 h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform: uppercase;
-	font-weight: 800;
 	color: $white;
 	font-size: $font-size-xs;
 	text-align: right;
-	border-top: 4px solid $white;
+	border-top: 2px solid $white;
 	margin-bottom: 20px;
 	@media screen and (min-width: $bp-s) {
 		text-align: left;
