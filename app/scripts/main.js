@@ -6,6 +6,7 @@
 
 	function init(){
 		showNav();
+		toSection();
 	}
 
 	function showNav(){
@@ -16,6 +17,21 @@
 		});	
 	}
 
+	function toSection() {
+  		$('a[href^="#"]').on('click',function(e) {
+	    	e.preventDefault();
+	    	$(nav_container).hide().removeClass('active');
+			$(hamburger_icon).removeClass('open');
+	    	var target = this.hash;
+	    	var $target = $(target);
+
+	    	$('html, body').stop().animate({
+	        	'scrollTop': $target.offset().top
+	    	}, 900, 'swing', function () {
+	        	window.location.hash = target;
+	    	});
+		});
+	}
 
 	init();
 })();

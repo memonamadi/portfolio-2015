@@ -2,8 +2,7 @@
   "name": "portfolio-v3",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4",
-    "particles.js": "~2.0.0"
+    "jquery": "~2.1.4"
   },
   "devDependencies": {
     "chai": "~3.4.0",
