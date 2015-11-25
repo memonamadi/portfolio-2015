@@ -9,19 +9,15 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family:'Playfair Display', serif;
+	font-weight: 900;
 	line-height: $line-height;
+	background-color: $white;
+	color: $black;
 }
 
 .main-wrapper {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to bottom,
-				rgba(86, 60, 252, 1) 0%,
-				rgba(141, 83, 234, 1) 50%,
-				rgba(191, 105, 218, 1) 100%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
 }
 
 a {
@@ -30,7 +26,7 @@ a {
 }
 
 span {
-	color: $white;
+	color: $green;
 }
 
 h1 {
@@ -46,12 +42,13 @@ h1 {
 
 
 h2 {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
-	color: $white;
+	color: $black;
 	font-size: $font-size-xs;
 	text-align: right;
-	border-top: 2px solid $white;
+	border-top: 2px solid $black;
 	margin-bottom: 20px;
 	@media screen and (min-width: $bp-s) {
 		text-align: left;
@@ -120,7 +117,7 @@ p {
 }
 
 nav.menu-icon {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Cabin', sans-serif;
 	position: relative;
 	top: 30px;
 	right: 30px;
@@ -140,7 +137,7 @@ nav.menu-icon {
 			position: absolute;
 			height: 3px;
 			width: 100%;
-			background-color: $white;
+			background-color: $green;
 			opacity: 1;
 			left: 0;
 			transition: .4s ease-in-out;
@@ -158,7 +155,7 @@ nav.menu-icon {
 	}
 	.open {
 		span {
-			background-color: $blue;
+			background-color: $green;
 			transition: 0.4s ease-in-out;
 			&:nth-child(1) {
 				top: 9px;
@@ -182,7 +179,7 @@ nav.menu-icon {
 
 .nav-overlay {
 	display: none;
-	background-color: $white;
+	background-color: $black;
 	opacity: 1;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 800;
@@ -209,6 +206,7 @@ nav.menu-icon {
 			font-size: $font-size-l;
 			text-align: right;
 			font-size: 2.5em;
+			color: $green;
 			li {
 				padding: 10px 0;
 				font-size: 1.4em;
@@ -217,15 +215,6 @@ nav.menu-icon {
 				animation-name: slideInRight;
 				-webkit-animation-name: slideInRight;
 			}
-		}
-		a:nth-child(1) {
-			color: $blue;
-		}
-		a:nth-child(2) {
-			color: rgba(141, 83, 234, 1);
-		}
-		a:nth-child(3) {
-			color: rgba(191, 105, 218, 1);
 		}
 	}
 }
@@ -263,9 +252,9 @@ nav.menu-icon {
 footer {
 	a {
 		font-size: $font-size-l;
-		color: $black;
+		color: $green;
 		&:hover {
-			color: $white;
+			color: $black;
 			transition: .5s ease-in-out;
 		}
 		@media screen and (min-width: $bp-s) {
@@ -327,7 +316,7 @@ footer {
 
 @keyframes slideInRight {
   from {
-    transform: translate3d(500%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
@@ -338,7 +327,7 @@ footer {
 
 @keyframes slideInLeft {
   from {
-    transform: translate3d(-500%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
